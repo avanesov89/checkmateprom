@@ -114,7 +114,7 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1210px;
+  max-width: 1340px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -326,8 +326,10 @@ a {
 }
 @media screen and (min-width: 1280px) {
   .work__page-item .work__info {
-    max-width: 380px;
+    max-width: 440px;
     margin-right: 20px;
+    padding-right: 20px;
+    flex-shrink: 0;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -342,13 +344,12 @@ a {
   line-height: 48px;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 @media screen and (max-width: 767px) {
   .work__page-item .work__info h1 {
     font-size: 28px;
     line-height: 40px;
-    margin-bottom: 0;
   }
 }
 .work__page-item .work__info-type {
@@ -367,7 +368,7 @@ a {
   }
 }
 .work__page-item .work__info-text p {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 24px;
   margin-bottom: 0;
   margin-top: 0;
@@ -398,8 +399,8 @@ a {
 }
 .work__page-item .work__data-item span {
   color: var(--color-sub-text);
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 20px;
   font-weight: 400;
   margin-bottom: 5px;
 }
@@ -528,6 +529,13 @@ a {
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 4px;
+}
+.work__page-item .work__screenshots-video {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  -o-object-fit: fill;
+  object-fit: fill;
 }
 
 .services__page {
